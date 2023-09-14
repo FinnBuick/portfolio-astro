@@ -1,16 +1,13 @@
-# Astro Starter Kit: Basics
-
-```
-npm create astro@latest -- --template basics
-```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+<h1 align="center">
+  finnbuick.com 
+</h1>
+<p align="center">
+  <a href="https://finnbuick.com" target="_blank">finnbuick.com</a> built with <a href="https://www.astro.build/" target="_blank">Astro</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+</p>
+<p align="center">
+  <a href="https://app.netlify.com/sites/celadon-baklava-0999e8/deploys" target="_blank">
+    <img src="https://api.netlify.com/api/v1/badges/50dfaf86-2a49-48fc-b179-abd041d0b2d2/deploy-status" alt="Netlify Status" />
+</p>
 
 ## 🚀 Project Structure
 
