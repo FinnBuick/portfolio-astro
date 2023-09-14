@@ -2,7 +2,7 @@
   finnbuick.com 
 </h1>
 <p align="center">
-  <a href="https://finnbuick.com" target="_blank">finnbuick.com</a> built with <a href="https://www.astro.build/" target="_blank">Astro</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+  <a href="https://www.finnbuick.com" target="_blank">finnbuick.com</a> built with <a href="https://www.astro.build/" target="_blank">Astro</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 <p align="center">
   <a href="https://app.netlify.com/sites/celadon-baklava-0999e8/deploys" target="_blank">
