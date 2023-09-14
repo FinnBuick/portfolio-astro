@@ -10,9 +10,14 @@ import { ArrowRightIcon } from "astro-feather";
       impact peoples lives. I'm currently working as a a full-stack engineer at{
         " "
       }
-      {(<a href="https://www.upstreet.co/">Upstreet</a>)}, a Sydney-based
-      startup that helps people get started on their journey to share ownership
-      by building a share portfolio while shopping online.
+      {
+        (
+          <a href="https://www.upstreet.co/" aria-label="Upstreet">
+            Upstreet
+          </a>
+        )
+      }, a Sydney-based startup that helps people get started on their journey
+      to share ownership by building a share portfolio while shopping online.
     </p>
     <br />
     <p>My skill set includes:</p>
@@ -55,7 +60,12 @@ import { ArrowRightIcon } from "astro-feather";
         <li>Software Engineering Practices</li>
       </ul>
       <div class="project__title">
-        <a class="left" href="FinneasBuickResume.pdf" target="_blank">
+        <a
+          class="left"
+          href="FinneasBuickResume.pdf"
+          aria-label="Resume"
+          target="_blank"
+        >
           View my resume
         </a>
         <ArrowRightIcon customClasses="icon arrow" />

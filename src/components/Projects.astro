@@ -11,6 +11,7 @@ import { ArrowRightIcon } from "astro-feather";
           class="left"
           target="_blank"
           href="https://spotify-judger.vercel.app/"
+          aria-label="Spotify Judger"
         >
           Spotify Judger
         </a>
@@ -59,11 +60,16 @@ import { ArrowRightIcon } from "astro-feather";
       <div class="project__title">Upstreet Web App</div>
       <div class="project__description">
         Led the development of the full-stack web application for{" "}
-        {(<a href="https://www.upstreet.co/">Upstreet</a>)}, a startup that
-        helps people earn shares as they shop. As the lead fullstack developer
-        on this project I'm responsible for solution design, planning and
-        implementation. Utilized test driven development to build out and deploy
-        the beta release app in less than 5 months.
+        {
+          (
+            <a href="https://www.upstreet.co/" aria-label="Upstreet">
+              Upstreet
+            </a>
+          )
+        }, a startup that helps people earn shares as they shop. As the lead
+        fullstack developer on this project I'm responsible for solution design,
+        planning and implementation. Utilized test driven development to build
+        out and deploy the beta release app in less than 5 months.
       </div>
       <div class="project__used">
         <span class="project__used__item">Typescript</span>
@@ -84,6 +90,7 @@ import { ArrowRightIcon } from "astro-feather";
           class="left"
           target="_blank"
           href="https://github.com/FinnBuick/COMP434-CPD"
+          aria-label="Computer Vision Finger Counter"
         >
           Computer Vision Finger Counter
         </a>

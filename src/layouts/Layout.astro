@@ -36,24 +36,28 @@ const { title } = Astro.props;
     src: url(../../fonts/Inconsolata-Light.ttf) format("truetype");
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
   }
   @font-face {
     font-family: Inconsolata;
     src: url(../../fonts/Inconsolata-Regular.ttf) format("truetype");
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
   }
   @font-face {
     font-family: Inconsolata;
     src: url(../../fonts/Inconsolata-Medium.ttf) format("truetype");
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
   }
   @font-face {
     font-family: Inconsolata;
     src: url(../../fonts/Inconsolata-Bold.ttf) format("truetype");
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
   }
 
   * {
@@ -72,7 +76,7 @@ const { title } = Astro.props;
     --bg: white;
     --textNormal: #404048;
     --textTitle: #222;
-    --textLink: #007bff;
+    --textLink: #1e77bc;
     --hr: hsla(0, 0%, 0%, 0.2);
 
     background-color: var(--bg);
@@ -293,8 +297,10 @@ const { title } = Astro.props;
 
   .intro__image {
     border-radius: 50%;
-    width: 100%;
     max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    height: auto;
     box-shadow:
       0 20px 25px -5px rgb(0 0 0 / 0.1),
       0 8px 10px -6px rgb(0 0 0 / 0.1);

@@ -5,7 +5,12 @@ import { MailIcon, LinkedinIcon, GithubIcon } from "astro-feather";
 <div class="footer">
   <div class="footer__content">
     <div class="socials">
-      <a href="mailto:finnbuick@gmail.com" target="_blank" rel="noreferrer">
+      <a
+        href="mailto:finnbuick@gmail.com"
+        aria-label="Email"
+        target="_blank"
+        rel="noreferrer"
+      >
         <div class="socials__icon">
           <MailIcon />
         </div>
@@ -20,7 +25,12 @@ import { MailIcon, LinkedinIcon, GithubIcon } from "astro-feather";
         <LinkedinIcon />
       </div>
     </a> -->
-      <a href="https://github.com/FinnBuick/" target="_blank" rel="noreferrer">
+      <a
+        href="https://github.com/FinnBuick/"
+        aria-label="Github"
+        target="_blank"
+        rel="noreferrer"
+      >
         <div class="socials__icon">
           <GithubIcon />
         </div>
@@ -30,9 +40,18 @@ import { MailIcon, LinkedinIcon, GithubIcon } from "astro-feather";
       Finn Buick &copy; {new Date().getFullYear()}
     </div>
     <div class="footer__builtwith">
-      Built with <a href="https://astro.build">Astro</a> and deployed on
-      <a href="https://www.netlify.com/">Netlify</a>. All text is set in <a
-        href="https://fonts.google.com/specimen/Inconsolata">Inconsolata</a
+      Built with <a
+        href="https://astro.build"
+        aria-label="Astro"
+        target="_blank">Astro</a
+      > and deployed on
+      <a href="https://www.netlify.com/" aria-label="Netlify" rel="noreferrer"
+        >Netlify</a
+      >. All text is set in <a
+        href="https://fonts.google.com/specimen/Inconsolata"
+        aria-label="Inconsolata"
+        target="_blank"
+        rel="noreferrer">Inconsolata</a
       >.
     </div>
   </div>
