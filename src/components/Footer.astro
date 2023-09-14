@@ -1,0 +1,31 @@
+---
+import { MailIcon, LinkedinIcon, GithubIcon } from "astro-feather";
+---
+
+<div class="footer">
+  <div class="socials">
+    <a href="mailto:finnbuick@gmail.com" target="_blank" rel="noreferrer">
+      <div class="socials__icon">
+        <MailIcon />
+      </div>
+    </a>
+    <!-- Hide temporarily since linkedin is hacked -->
+    <!-- <a
+      href="https://www.linkedin.com/in/finn-buick/"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <div class="socials__icon">
+        <LinkedinIcon />
+      </div>
+    </a> -->
+    <a href="https://github.com/FinnBuick/" target="_blank" rel="noreferrer">
+      <div class="socials__icon">
+        <GithubIcon />
+      </div>
+    </a>
+  </div>
+  <div class="footer__copyright">
+    Finn Buick &copy; {new Date().getFullYear()}
+  </div>
+</div>
