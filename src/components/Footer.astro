@@ -3,14 +3,15 @@ import { MailIcon, LinkedinIcon, GithubIcon } from "astro-feather";
 ---
 
 <div class="footer">
-  <div class="socials">
-    <a href="mailto:finnbuick@gmail.com" target="_blank" rel="noreferrer">
-      <div class="socials__icon">
-        <MailIcon />
-      </div>
-    </a>
-    <!-- Hide temporarily since linkedin is hacked -->
-    <!-- <a
+  <div class="footer__content">
+    <div class="socials">
+      <a href="mailto:finnbuick@gmail.com" target="_blank" rel="noreferrer">
+        <div class="socials__icon">
+          <MailIcon />
+        </div>
+      </a>
+      <!-- Hide temporarily since linkedin is hacked -->
+      <!-- <a
       href="https://www.linkedin.com/in/finn-buick/"
       target="_blank"
       rel="noreferrer"
@@ -19,13 +20,20 @@ import { MailIcon, LinkedinIcon, GithubIcon } from "astro-feather";
         <LinkedinIcon />
       </div>
     </a> -->
-    <a href="https://github.com/FinnBuick/" target="_blank" rel="noreferrer">
-      <div class="socials__icon">
-        <GithubIcon />
-      </div>
-    </a>
-  </div>
-  <div class="footer__copyright">
-    Finn Buick &copy; {new Date().getFullYear()}
+      <a href="https://github.com/FinnBuick/" target="_blank" rel="noreferrer">
+        <div class="socials__icon">
+          <GithubIcon />
+        </div>
+      </a>
+    </div>
+    <div class="footer__copyright">
+      Finn Buick &copy; {new Date().getFullYear()}
+    </div>
+    <div class="footer__builtwith">
+      Built with <a href="https://astro.build">Astro</a> and deployed on
+      <a href="https://www.netlify.com/">Netlify</a>. All text is set in <a
+        href="https://fonts.google.com/specimen/Inconsolata">Inconsolata</a
+      >.
+    </div>
   </div>
 </div>

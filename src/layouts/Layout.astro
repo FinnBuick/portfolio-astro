@@ -446,10 +446,22 @@ const { title } = Astro.props;
     padding-bottom: 40px;
   }
 
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .footer__copyright {
     width: auto;
     text-align: center;
-    margin-top: 20px;
+    margin: 20px;
+  }
+
+  .footer__builtwith {
+    text-align: center;
+    max-width: 400px;
   }
 
   .icon {
