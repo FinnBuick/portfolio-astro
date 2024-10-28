@@ -363,13 +363,28 @@ input:checked + .slider:before {
 }
 
 .skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  transition: all 0.3s ease;
 }
 
 .skills__category {
-  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
+.skills__category p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.skills__category ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills__category li {
+  margin-bottom: 0.25rem;
 }
 
 .resume {
