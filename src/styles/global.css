@@ -1,27 +1,27 @@
 @font-face {
   font-family: Inconsolata;
-  src: url(../../fonts/Inconsolata-Light.ttf) format("truetype");
+  src: url(/fonts/Inconsolata-Light.ttf) format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: Inconsolata;
-  src: url(../../fonts/Inconsolata-Regular.ttf) format("truetype");
+  src: url(/fonts/Inconsolata-Regular.ttf) format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: Inconsolata;
-  src: url(../../fonts/Inconsolata-Medium.ttf) format("truetype");
+  src: url(/fonts/Inconsolata-Medium.ttf) format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: Inconsolata;
-  src: url(../../fonts/Inconsolata-Bold.ttf) format("truetype");
+  src: url(/fonts/Inconsolata-Bold.ttf) format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -42,9 +42,7 @@ html {
 
   --bg: white;
   --textNormal: #404048;
-  --textTitle: #222;
   --textLink: #1e77bc;
-  --hr: hsla(0, 0%, 0%, 0.2);
 
   background-color: var(--bg);
   color: var(--textNormal);
@@ -55,9 +53,7 @@ html.dark {
 
   --bg: #1f2933;
   --textNormal: rgba(255, 255, 255, 0.87);
-  --textTitle: rgba(255, 255, 255.87);
   --textLink: #00abb2;
-  --hr: hsla(0, 0%, 100%, 0.2);
 
   background-color: var(--bg);
   color: var(--textNormal);
@@ -103,7 +99,6 @@ a.left:hover:before {
 }
 
 h1 {
-  font-size: 56px;
   display: block;
   font-size: 2em;
   margin-block-start: 0.67em;
@@ -135,91 +130,6 @@ h5 {
 }
 h6 {
   font-size: 16px;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.switch-wrapper {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 30px;
-  right: 30px;
-}
-
-.switch-wrapper span svg {
-  width: 18px;
-  height: 18px;
-}
-
-.toggle-wrapper {
-  margin: 10px;
-}
-
-/* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 45px;
-  height: 25px;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 19px;
-  width: 19px;
-  left: 3px;
-  bottom: 3px;
-  background-color: white;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-input:checked + .slider {
-  background-color: var(--textLink);
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px var(--textLink);
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  transform: translateX(100%);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 25px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
 }
 
 .intro {
@@ -307,10 +217,6 @@ input:checked + .slider:before {
   }
 }
 
-.link {
-  color: var(--mainText);
-}
-
 .lg-view {
   display: inline-block;
 }
@@ -319,26 +225,9 @@ input:checked + .slider:before {
   display: none;
 }
 
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(20vh);
-  visibility: hidden;
-  transition:
-    opacity 0.6s ease-out,
-    transform 1.2s ease-out;
-  will-change: opacity, visibility;
-}
-
-.fade-in-section.is-visible {
-  opacity: 1;
-  transform: none;
-  visibility: visible;
-}
-
 .section {
   display: flex;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   padding: 100px 170px;
   font-weight: 700;
   font-size: 1.3rem;
@@ -348,7 +237,7 @@ input:checked + .slider:before {
 .section__title {
   color: var(--textLink);
   font-weight: 700;
-  margin-right: 70px;
+  margin: 0 70px 0 0;
   font-size: 1.1rem;
 }
 
@@ -385,10 +274,6 @@ input:checked + .slider:before {
 
 .skills__category li {
   margin-bottom: 0.25rem;
-}
-
-.resume {
-  padding-top: 20px;
 }
 
 .project {
